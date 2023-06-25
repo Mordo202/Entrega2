@@ -1,0 +1,32 @@
+/*Seccion Variedades*/
+
+/*TITULO*/
+
+.titulo-variedades{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    border-style: groove;
+    border-width: 20px;
+    border-color: black;
+}
+
+/*IMAGENES*/
+
+.imagen-sativa{
+    height: 600px;
+}
+
+.imagen-indica{
+    height: 600px;
+    margin-bottom: 20px;
+}
+
+/*LISTA*/
+
+.lista-variedades{
+    list-style-type: none;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}

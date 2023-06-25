@@ -1,0 +1,107 @@
+@import 'body';
+@import 'footer';
+@import 'generales';
+@import 'header';
+@import 'main';
+@import 'tienda';
+@import 'variedades';
+@import 'metodos';
+
+
+
+/*MIXIN HEADER*/
+
+@mixin variables($color, $height , $fuente){
+    color: $color;
+    height: $height;
+    font-size: $fuente;
+}
+.logo-nombre{
+    @include variables(rgb(216, 216, 216), 50px, 80px);
+}
+
+
+/*CONTENIDO MENU INDEX*/
+
+$estilos: (color-fondo: rgb(223, 219, 30),
+color-borde: black,
+estilo-borde: groove,
+padding: 10px);
+
+.parrafo1{
+    padding: map-get($estilos, padding);
+    background-color: map-get($estilos, color-fondo);
+    border-color: map-get($estilos, color-borde);
+    border-style: map-get($estilos, estilo-borde);
+    }
+
+.parrafo2{
+    padding: map-get($estilos, padding);
+    background-color: map-get($estilos, color-fondo);
+    border-color: map-get($estilos, color-borde);
+    border-style: map-get($estilos, estilo-borde);
+    }
+
+    .parrafo3{
+        padding: map-get($estilos, padding);
+        background-color: map-get($estilos, color-fondo);
+        border-color: map-get($estilos, color-borde);
+        border-style: map-get($estilos, estilo-borde);
+        }
+
+.img1{
+    padding: 20px 10px 20px 10px;
+}
+
+.img2{
+    padding: 20px 10px 20px 10px;
+}
+
+
+/*variables en seccion metodos*/
+
+$ancho: 720px;
+$alto: 520px;
+
+/*imagenes metodos*/
+
+.img-sog{
+    height: $alto;
+    width: $ancho;
+    box-shadow: 0 0 20px;
+}
+
+.img-scrog{
+    height: $alto;
+    width: $ancho;
+    box-shadow: 0 0 20px;
+}
+
+.img-lst{
+    height: $alto;
+    width: $ancho;
+    box-shadow: 0 0 20px;
+}
+
+
+/*REDES FOOTER*/
+
+$botones: (boton1:rgb(74, 67, 161) , boton2: rgb(0, 0, 0));
+
+@each $boton , $fondo in $botones{
+    .btn--#{$boton} {
+    background-color: $fondo;
+    }
+}
+
+.redes{
+    div{
+        button{
+            height: 50px;
+            width: 100px;
+            color: white;
+        }
+    }
+}
+
+

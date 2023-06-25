@@ -1,0 +1,19 @@
+/* TIENDA */
+
+.titulo-tienda{
+    display: flex;
+    justify-content: center;
+    border-style: groove;
+    border-width: 20px;
+    border-color: black;
+}
+
+.card-aceite{
+    background-color: white;
+    width: 300px;
+    height: 500px;
+    box-shadow: 0 0 20px;
+    margin: 20px;
+    padding: 20px 20px 20px 20px;
+}
+
